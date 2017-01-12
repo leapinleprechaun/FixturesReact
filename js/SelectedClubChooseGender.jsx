@@ -4,7 +4,8 @@ const {object} = React.PropTypes
 
 const SelectedClubChooseGender = React.createClass({
   getInitialState () {
-    return Object.assign(this.props.state, {display: 'gender'})
+
+    return Object.assign(this.props.state, {display: 'gender', selectedClub: this.props.params.club})
   },
   propTypes: {
     params: object,
